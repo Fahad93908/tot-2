@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+}
+
+@layer components {
+  .animation-hover:after {
+    @apply background: none repeat scroll 0 0 transparent;
+    content: "";
+    height: 2px;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    display: block;
+    width: 0;
+    --tw-bg-opacity: 1;
+    background-color: rgb(245 56 85 / var(--tw-bg-opacity));
+  }
+}
+
+@layer utilities {
+}
